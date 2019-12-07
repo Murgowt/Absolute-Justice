@@ -1,0 +1,55 @@
+#Tkinter Imports
+from tkinter import *
+import tkinter.messagebox
+from tkinter import ttk
+def action(event,name_text,id_text, dis_text, height_text, col_text,cha_text,root):
+    from . import DBMS_FinalC as DB
+    id = id_text.get()
+    name = name_text.get()
+    dis = dis_text.get()
+    height= height_text.get()
+    color = col_text.get()
+    cha = cha_text.get()
+    dis = dis_text.get()
+    cid=id+dis
+    print(id, name,dis, height, color, cha)
+    DB.citizen_missing_add(name,id,dis,height,color,cha)
+    tkinter.messagebox.showinfo('Missing Person Registered !!!',"complaint ID: "+cid)
+    root.destroy()
+def missadd():
+    root = tkinter.Tk()
+    root.configure(background='grey')
+    root.title("Complaints form")
+    root.geometry("500x300")
+    heading = ttk.Label(root, text="Form").grid(row=0, column=1)
+    name_label = ttk.Label(root, text="Name").grid(row=1, column=0)
+    id_label = ttk.Label(root, text="Citizen ID").grid(row=2, column=0)
+    district_label = ttk.Label(root, text="District").grid(row=3, column=0)
+    height_label = ttk.Label(root, text="Height").grid(row=4, column=0)
+    col_label = ttk.Label(root, text="Color").grid(row=5, column=0)
+    cha_label = ttk.Label(root, text="Characteristics").grid(row=6, column=0)
+
+    id = tkinter.StringVar()
+    name = tkinter.StringVar()
+    color = tkinter.StringVar()
+    height= tkinter.StringVar()
+    cha = tkinter.StringVar()
+    dis = tkinter.StringVar()
+    id_text = ttk.Entry(root, textvariable=id)
+    name_text = ttk.Entry(root, textvariable=name)
+    height_text = ttk.Entry(root, textvariable=height)
+    col_text = ttk.Entry(root, textvariable=color)
+    cha_text = ttk.Entry(root, textvariable=cha)
+    dis_text = ttk.Entry(root, textvariable=dis)
+    name_text.grid(row=1, column=1, ipadx="100")
+    id_text.grid(row=2, column=1, ipadx="100")
+    dis_text.grid(row=3, column=1, ipadx="100")
+    height_text.grid(row=4, column=1, ipadx="100")
+    col_text.grid(row=5, column=1, ipadx="100")
+    cha_text.grid(row=6, column=1, ipadx="100")
+
+    submit = tkinter.Button(root, text="Submit", fg="Black")
+    submit.bind("<Button-1>",lambda event: action(event,name_text,id_text, dis_text, height_text, col_text,cha_text,root))
+    submit.grid(row=9, column=1)
+    root.mainloop()
+missadd()
