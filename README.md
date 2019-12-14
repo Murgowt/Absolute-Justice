@@ -12,3 +12,11 @@ Absolute Justice  is the bridge between that gap.It provides the general public 
 
 Hence this application successfully bridges the gap between the people and the police force and leads to a more peaceful society.
 
+![image](https://user-images.githubusercontent.com/43582286/70852707-b4934980-1eca-11ea-86c4-655635946dd3.png)
+
+A few Screen-Shots
+
+![image](https://user-images.githubusercontent.com/43582286/70852726-de4c7080-1eca-11ea-97d5-59d92c651779.png)
+
+
+![image](https://user-images.githubusercontent.com/43582286/70852735-fb813f00-1eca-11ea-9b8a-3d6fb1cd01e8.png)
