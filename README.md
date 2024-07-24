@@ -8,7 +8,7 @@ Absolute Justice  is the bridge between that gap.It provides the general public 
 3.Criminals in a particular district 
 4.Police force of a district
 5.A Police login with access to current cases, criminal DB, Citizen DB .
-6.An FR based Police Login.
+6.An Facial Recognition based Police Login.
 
 Hence this application successfully bridges the gap between the people and the police force and leads to a more peaceful society.
 
